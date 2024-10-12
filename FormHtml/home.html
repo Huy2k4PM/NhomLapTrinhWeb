@@ -10,9 +10,8 @@
         <title>Website Film</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/FormCss/background.css">
-        <link rel="stylesheet" href="/FormCss/navFilm.css">
-        <link rel="stylesheet" href="/FormCss/listFilm.css">
+        <link rel="stylesheet" href="../FormCss/background.css">
+        <link rel="stylesheet" href="../FormCss/listFilm.css">
     </head>
     <body>
         <!-- header -->
@@ -27,30 +26,89 @@
           </div>
         
         <!-- listFilm -->
-        <div class="">
-            <ul>
-                <li><a class="active" href="#Film">Film</a></li>
-                <li><a class="active" href="#Film">Đang chiếu</a></li>
-                <li><a class="active" href="#Film">Sắp chiếu</a></li>
-            </ul>
-        </div>
+       
+         <!-- Phần điều hướng -->
+    <nav>
+        <ul class="film-categories">
+            <li><a href="#" id="show-now-showing">Phim Đang Chiếu</a></li>
+            <li><a href="#" id="show-coming-soon">Phim Sắp Chiếu</a></li>
+        </ul>
+    </nav>
 
-        <!-- cardFilm -->
-        <div class="card">
-            <img src="../hinhnen.jpg" class="card-img" alt="">
-            <div class="card-body">
-                <h1 class="card-title">N5</h1>
-                <p class="card-sub-title">Nhom 5</p>
-                <p class="card-info">My card</p>
-                <button class="card-btn">Book</button>
+    <!-- Phần Phim Đang Chiếu -->
+    <section id="now-showing">
+        <h1>Phim Đang Chiếu</h1>
+        <div class="film-list">
+            <div class="film-item">
+                <img src="../image/doanh.jpg" alt="Film 1 Image">
+                <h2>Đố anh bắt còng được tôi</h2>
+                <p>Thể loại: Hành động</p>
+                <p>Thời lượng: 120 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
+            </div>
+            <div class="film-item">
+                <img src="../image/domdom2.jpg" alt="Film 1 Image">
+                <h2>Mộ đom đóm</h2>
+                <p>Thể loại: Hành động</p>
+                <p>Thời lượng: 120 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
+            </div>
+            <div class="film-item">
+                <img src="../image/gatrum.jpg" alt="Film 1 Image">
+                <h2>Gã trùm vô danh</h2>
+                <p>Thể loại: Hành động</p>
+                <p>Thời lượng: 120 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
+            </div>
+
+            <div class="film-item">
+                <img src="../image/henho.jpg" alt="Film 2 Image">
+                <h2>Hẹn hò với sát nhân</h2>
+                <p>Thể loại: Hài kịch</p>
+                <p>Thời lượng: 90 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
             </div>
         </div>
-        
-        <!-- Footer
-        <div class="footer">
-            <h1>Footer</h1>
-        </div>
+    </section>
 
-        <script src="" async defer></script>
+    <!-- Phần Phim Sắp Chiếu -->
+    <section id="coming-soon">
+        <h1>Phim Sắp Chiếu</h1>
+        <div class="film-list">
+            <div class="film-item">
+                <img src="../image/noitinh.jpg" alt="Film 3 Image">
+                <h2>Nơi tình yêu kết thúc</h2>
+                <p>Thể loại: Kinh dị</p>
+                <p>Thời lượng: 110 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
+            </div>
+            <div class="film-item">
+                <img src="../image/tran.jpg" alt="Film 3 Image">
+                <h2>Transformers một </h2>
+                <p>Thể loại: Kinh dị</p>
+                <p>Thời lượng: 110 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
+            </div>
+            <div class="film-item">
+                <img src="../image/phepmau.jpg" alt="Film 3 Image">
+                <h2>Phép màu giữa đêm đông</h2>
+                <p>Thể loại: Kinh dị</p>
+                <p>Thời lượng: 110 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
+            </div>
+
+            <div class="film-item">
+                <img src="../image/robot.jpg" alt="Film 4 Image">
+                <h2>Robot hoang dã</h2>
+                <p>Thể loại: Tình cảm</p>
+                <p>Thời lượng: 100 phút</p>
+                <button class="book-now">Đặt vé ngay</button>
+            </div>
+        </div>
+    </section>
+ <!--  -->
+ <script src="../FormJS/listFilm.js"></script>
+
     </body>
+   
 </html>
